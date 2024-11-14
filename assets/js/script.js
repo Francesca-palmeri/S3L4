@@ -1,4 +1,5 @@
 const tombolone = document.getElementById("grigliaTombola");
+const btnEstrazione = document.getElementById('estrai');
 
 document.addEventListener('load', init());
 
@@ -14,3 +15,6 @@ function grigliaTombolone() {
     }
 };
 
+btnEstrazione.addEventListener('click', function() {
+    extract = Math.floor(Math.random()*90) + 1
+})
